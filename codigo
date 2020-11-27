@@ -1,0 +1,44 @@
+  double n1, n2, total;
+            int op;
+
+
+                n1 = Convert.ToDouble(textBox1.Text);
+                n2 = Convert.ToDouble(textBox2.Text);
+                op = Convert.ToInt16(textBox3.Text);
+
+                switch (op)
+                {
+                    case 1:
+                        total = n1 + n2;
+                        MessageBox.Show(" A soma dos valores é: " + total);
+                        break;
+
+                    case 2:
+                        total = n1 - n2;
+                        MessageBox.Show(" A subtração dos valores é: " + total);
+                        break;
+
+                    case 3:
+                        total = n1 * n2;
+                        MessageBox.Show(" A multiplicação dos valores é: " + total);
+                        break;
+                    case 4:
+                         total = n1 / n2;
+                        MessageBox.Show(" A Divisão dos valores é: " + total);
+                        break;
+
+                }
+            }
+        
+
+        private void btn_limpar_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+        }
+
+        private void btn_sair_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
